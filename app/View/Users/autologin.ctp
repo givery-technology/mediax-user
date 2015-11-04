@@ -1,0 +1,1 @@
+<?php $this->assign('title', __('SEM-CHECK'));?>

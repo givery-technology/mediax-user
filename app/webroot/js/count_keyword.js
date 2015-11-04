@@ -1,0 +1,1 @@
+$(document).ready(function(){	count_enduser_keyword();})function count_enduser_keyword(){	$.ajax({		url: base_url+'keywords/count_enduser_keyword',		data:{},		type:'post',		async:true,		success:function(res){			$('#count_enduser_keyword').html(res.count);		},		dataType:'json'	});}

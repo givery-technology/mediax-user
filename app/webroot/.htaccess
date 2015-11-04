@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^(.*)$ index.php [QSA,L]
+</IfModule>
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^sem-check.com
+RewriteRule (.*) https://www.sem-check.com/mediax.user/$1 [R=301,L]
